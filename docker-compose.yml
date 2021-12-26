@@ -1,0 +1,15 @@
+version: "3.9"
+
+networks:
+  demo-server:
+    driver: bridge
+
+services:
+  app_1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - demo-server
+    ports:
+      - 6000:6000
