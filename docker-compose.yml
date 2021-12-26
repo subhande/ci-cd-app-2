@@ -5,7 +5,7 @@ networks:
     driver: bridge
 
 services:
-  app_1:
+  app-2:
     build:
       context: .
       dockerfile: Dockerfile
